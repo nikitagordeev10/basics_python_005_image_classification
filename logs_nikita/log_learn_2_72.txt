@@ -1,0 +1,39 @@
+/home/nikita/projects/6-course-university-basic-programming-python/venv/bin/python /home/nikita/projects/6-course-university-basic-programming-python/lab-6/fashion_mnist_learn.py
+2022-05-13 22:56:19.390289: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 784)               615440    
+_________________________________________________________________
+dense_1 (Dense)              (None, 10)                7850      
+=================================================================
+Total params: 623,290
+Trainable params: 623,290
+Non-trainable params: 0
+_________________________________________________________________
+2022-05-13 22:56:19.417978: I tensorflow/core/profiler/lib/profiler_session.cc:110] Profiler session initializing.
+2022-05-13 22:56:19.418001: I tensorflow/core/profiler/lib/profiler_session.cc:125] Profiler session started.
+2022-05-13 22:56:19.418047: I tensorflow/core/profiler/lib/profiler_session.cc:143] Profiler session tear down.
+  1/240 [..............................] - ETA: 55s - loss: 2.2438 - accuracy: 0.15502022-05-13 22:56:19.789519: I tensorflow/core/profiler/lib/profiler_session.cc:110] Profiler session initializing.
+2022-05-13 22:56:19.789547: I tensorflow/core/profiler/lib/profiler_session.cc:125] Profiler session started.
+2022-05-13 22:56:19.794170: I tensorflow/core/profiler/lib/profiler_session.cc:67] Profiler session collecting data.
+2022-05-13 22:56:19.794728: I tensorflow/core/profiler/lib/profiler_session.cc:143] Profiler session tear down.
+2022-05-13 22:56:19.795525: I tensorflow/core/profiler/rpc/client/save_profile.cc:136] Creating directory: logs/train/plugins/profile/2022_05_13_22_56_19
+
+2022-05-13 22:56:19.796044: I tensorflow/core/profiler/rpc/client/save_profile.cc:142] Dumped gzipped tool data for trace.json.gz to logs/train/plugins/profile/2022_05_13_22_56_19/nikita-VirtualBox.trace.json.gz
+2022-05-13 22:56:19.797526: I tensorflow/core/profiler/rpc/client/save_profile.cc:136] Creating directory: logs/train/plugins/profile/2022_05_13_22_56_19
+
+2022-05-13 22:56:19.797591: I tensorflow/core/profiler/rpc/client/save_profile.cc:142] Dumped gzipped tool data for memory_profile.json.gz to logs/train/plugins/profile/2022_05_13_22_56_19/nikita-VirtualBox.memory_profile.json.gz
+2022-05-13 22:56:19.797719: I tensorflow/core/profiler/rpc/client/capture_profile.cc:251] Creating directory: logs/train/plugins/profile/2022_05_13_22_56_19
+Dumped tool data for xplane.pb to logs/train/plugins/profile/2022_05_13_22_56_19/nikita-VirtualBox.xplane.pb
+Dumped tool data for overview_page.pb to logs/train/plugins/profile/2022_05_13_22_56_19/nikita-VirtualBox.overview_page.pb
+Dumped tool data for input_pipeline.pb to logs/train/plugins/profile/2022_05_13_22_56_19/nikita-VirtualBox.input_pipeline.pb
+Dumped tool data for tensorflow_stats.pb to logs/train/plugins/profile/2022_05_13_22_56_19/nikita-VirtualBox.tensorflow_stats.pb
+Dumped tool data for kernel_stats.pb to logs/train/plugins/profile/2022_05_13_22_56_19/nikita-VirtualBox.kernel_stats.pb
+
+240/240 [==============================] - 1s 5ms/step - loss: 1.1852 - accuracy: 0.6626 - val_loss: 0.8427 - val_accuracy: 0.7372
+313/313 [==============================] - 1s 1ms/step - loss: 0.8641 - accuracy: 0.7210
+Accuracy on test data is 72.10000157356262 percent
+--- 2.590688943862915 seconds ---
